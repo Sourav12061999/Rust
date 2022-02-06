@@ -11,10 +11,10 @@ pub fn run() {
     let len = type2.len(); //Length of type2
     let capacity = type2.capacity(); //Capacity in bytes
     let contains = type2.contains("world"); //If contains sub string
-    assert_eq!(2, type2.len()); // will give error as the type2.len() is not 2
+                                            // assert_eq!(2, type2.len()); // will give error as the type2.len() is not 2
+    println!("{:?}", (type1, &type2, len, capacity, contains));
     for words in type2.split_whitespace() {
         // Don't know why but this for loop won't work after the print
         println!("{}", words);
     }
-    println!("{:?}", (type1, type2, len, capacity, contains));
 }
